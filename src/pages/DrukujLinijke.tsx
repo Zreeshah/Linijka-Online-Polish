@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Printer } from 'lucide-react';
 import reglaImage from '@/assets/Regla para Imprimir.png';
 
-const ImprimirRegla: React.FC = () => {
+const DrukujLinijke: React.FC = () => {
   const handlePrint = () => {
     window.print();
   };
@@ -13,10 +13,11 @@ const ImprimirRegla: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Imprimir Regla - Regla en Línea para Imprimir Gratis | Regla.Onl</title>
-        <meta name="description" content="Imprime una regla de 30 cm o 12 pulgadas gratis. Regla para imprimir en tamaño real, calibrada y lista para usar en casa o la escuela." />
-        <meta name="keywords" content="imprimir regla, regla para imprimir, regla imprimible, regla 30 cm, regla 12 pulgadas" />
-        <link rel="canonical" href="https://regla.online/imprimir" />
+        <title>Linijka do Druku - Darmowa Linijka do Wydrukowania | Linijka-Online.pl</title>
+        <meta name="description" content="Wydrukuj linijkę 30 cm lub 12 cali za darmo. Linijka do druku w rzeczywistym rozmiarze, skalibrowana i gotowa do użycia w domu lub szkole." />
+        <meta name="keywords" content="linijka do druku, drukuj linijkę, linijka do wydrukowania, linijka 30 cm, linijka 12 cali" />
+        <link rel="canonical" href="https://linijka-online.pl/drukuj" />
+        <html lang="pl" />
       </Helmet>
 
       <Layout>
@@ -24,11 +25,11 @@ const ImprimirRegla: React.FC = () => {
           <div className="print:hidden">
             <div className="max-w-6xl mx-auto mb-8">
               <h1 className="text-4xl font-bold text-gray-900 mb-4">
-                Imprimir Regla – Regla en Línea para Imprimir Gratis
+                Linijka do Druku – Darmowa Linijka do Wydrukowania Online
               </h1>
 
               <p className="text-lg text-gray-700 mb-6">
-                ¿Necesitas una regla real para medir objetos y no tienes una a mano? Con nuestra herramienta puedes imprimir una regla fácilmente en tamaño real, hasta 29,7 cm o 11,7 pulgadas, directamente desde tu navegador.
+                Potrzebujesz prawdziwej linijki do mierzenia przedmiotów, a nie masz jej pod ręką? Z naszym narzędziem możesz łatwo wydrukować linijkę w rzeczywistym rozmiarze, do 29,7 cm lub 11,7 cala, bezpośrednio z przeglądarki.
               </p>
 
               <div className="mb-8">
@@ -37,7 +38,7 @@ const ImprimirRegla: React.FC = () => {
                   className="bg-ruler-primary hover:bg-ruler-secondary text-white"
                 >
                   <Printer className="mr-2 h-4 w-4" />
-                  Imprimir Regla
+                  Drukuj Linijkę
                 </Button>
               </div>
 
@@ -45,7 +46,7 @@ const ImprimirRegla: React.FC = () => {
                 <div className="lg:w-auto flex-shrink-0 flex justify-center lg:justify-start">
                   <img
                     src={reglaImage}
-                    alt="Imprimir Regla"
+                    alt="Linijka do druku"
                     className="h-auto max-h-[500px] sm:max-h-[600px] lg:max-h-[800px] w-auto object-contain"
                     loading="lazy"
                   />
@@ -55,88 +56,88 @@ const ImprimirRegla: React.FC = () => {
 
                   <section className="bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      Cómo Imprimir una Regla Correctamente
+                      Jak Prawidłowo Wydrukować Linijkę
                     </h2>
                     <p className="text-gray-700 mb-4">
-                      Sigue estos pasos para asegurarte de que tu regla impresa tenga el tamaño exacto:
+                      Postępuj zgodnie z tymi krokami, aby upewnić się, że wydrukowana linijka ma dokładny rozmiar:
                     </p>
                     <ol className="list-decimal list-inside space-y-2 text-gray-700">
-                      <li>Haz clic en el botón "Imprimir Regla" en la parte superior de la página.</li>
-                      <li>En la ventana de impresión, selecciona el tamaño de papel A4 (210 x 297 mm).</li>
-                      <li>Asegúrate de que la escala esté al 100% (sin ajuste o "ajuste al tamaño real").</li>
-                      <li>Imprime en orientación horizontal o vertical, según prefieras.</li>
-                      <li>Una vez impresa, verifica con una regla física que la medida sea correcta.</li>
+                      <li>Kliknij przycisk "Drukuj Linijkę" na górze strony.</li>
+                      <li>W oknie drukowania wybierz rozmiar papieru A4 (210 x 297 mm).</li>
+                      <li>Upewnij się, że skala jest ustawiona na 100% (bez dopasowania lub "rzeczywisty rozmiar").</li>
+                      <li>Drukuj w orientacji poziomej lub pionowej, według preferencji.</li>
+                      <li>Po wydrukowaniu sprawdź fizyczną linijką, czy pomiar jest prawidłowy.</li>
                     </ol>
                     <p className="text-gray-700 mt-4">
-                      Así tendrás una regla de 29,7 cm o 11,7 pulgadas perfectamente calibrada.
+                      W ten sposób otrzymasz idealnie skalibrowaną linijkę 29,7 cm lub 11,7 cala.
                     </p>
                   </section>
 
                   <section className="bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      Tipos de Reglas para Imprimir
+                      Rodzaje Linijek do Wydrukowania
                     </h2>
                     <p className="text-gray-700 mb-3">
-                      En nuestra web encontrarás distintos modelos de reglas imprimibles:
+                      Na naszej stronie znajdziesz różne modele linijek do druku:
                     </p>
                     <ul className="list-disc list-inside space-y-2 text-gray-700">
-                      <li>Regla de 30 cm para imprimir (centímetros y milímetros)</li>
-                      <li>Regla de 12 pulgadas para imprimir</li>
-                      <li>Regla métrica y en pulgadas combinada</li>
-                      <li>Regla imprimible en PDF (ideal para guardar y reutilizar)</li>
+                      <li>Linijka 30 cm do druku (centymetry i milimetry)</li>
+                      <li>Linijka 12 cali do druku</li>
+                      <li>Linijka metryczna i calowa połączona</li>
+                      <li>Linijka do druku w PDF (idealna do zapisania i wielokrotnego użycia)</li>
                     </ul>
                     <p className="text-gray-700 mt-4">
-                      Todas las reglas están diseñadas con medidas precisas y líneas claras, perfectas para el hogar, la escuela o el trabajo.
+                      Wszystkie linijki są zaprojektowane z precyzyjnymi wymiarami i wyraźnymi liniami, idealne do domu, szkoły lub pracy.
                     </p>
                   </section>
 
                   <section className="bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      Consejos Útiles
+                      Przydatne Wskazówki
                     </h2>
                     <ul className="list-disc list-inside space-y-2 text-gray-700">
-                      <li>Usa papel grueso o cartulina si quieres una regla más resistente.</li>
-                      <li>Si tu impresora cambia ligeramente la escala, puedes ajustar el zoom manualmente hasta que coincida con un objeto de medida conocida.</li>
-                      <li>Puedes laminar la regla impresa para prolongar su durabilidad.</li>
+                      <li>Użyj grubszego papieru lub kartonu, jeśli chcesz mieć bardziej wytrzymałą linijkę.</li>
+                      <li>Jeśli drukarka nieznacznie zmienia skalę, możesz ręcznie dostosować zoom, aż będzie odpowiadać obiektowi o znanym rozmiarze.</li>
+                      <li>Możesz zalaminować wydrukowaną linijkę, aby przedłużyć jej trwałość.</li>
                     </ul>
                   </section>
 
                   <section className="bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      Ventajas de Imprimir tu Propia Regla
+                      Zalety Drukowania Własnej Linijki
                     </h2>
                     <ul className="list-disc list-inside space-y-2 text-gray-700">
-                      <li>No necesitas comprar una física.</li>
-                      <li>Disponible en cualquier momento y lugar.</li>
-                      <li>Totalmente gratis y precisa.</li>
-                      <li>Puedes personalizarla en centímetros, pulgadas o ambas.</li>
+                      <li>Nie musisz kupować fizycznej linijki.</li>
+                      <li>Dostępna o każdej porze i w każdym miejscu.</li>
+                      <li>Całkowicie darmowa i dokładna.</li>
+                      <li>Możesz ją dostosować w centymetrach, calach lub obu.</li>
                     </ul>
                   </section>
 
                   <section className="bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      Descarga o Imprime tu Regla
+                      Pobierz lub Wydrukuj Swoją Linijkę
                     </h2>
                     <p className="text-gray-700 mb-4">
-                      Haz clic en el botón de abajo para imprimir tu regla directamente o descargarla en PDF.
-                      Perfecta para medir proyectos de manualidades, costura, dibujo técnico o uso escolar.
+                      Kliknij poniższy przycisk, aby wydrukować linijkę bezpośrednio lub pobrać ją w formacie PDF.
+                      Idealna do mierzenia projektów rękodzielniczych, szycia, rysunku technicznego lub użytku szkolnego.
                     </p>
                     <Button
                       onClick={handlePrint}
                       className="bg-ruler-primary hover:bg-ruler-secondary text-white"
                     >
                       <Printer className="mr-2 h-4 w-4" />
-                      Imprimir Regla Ahora
+                      Drukuj Linijkę Teraz
                     </Button>
                   </section>
 
                   <section className="bg-white p-6 rounded-lg shadow-sm">
                     <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                      Una Última Cosa
+                      Jeszcze Jedna Rzecz
                     </h2>
                     <p className="text-gray-700">
-                      Recuerda verificar siempre que la impresión esté al 100% de escala para garantizar la precisión.
-                      En Regla.Onl, queremos que siempre tengas una regla imprimible confiable, práctica y gratuita al alcance de un clic.
+                      Pamiętaj, aby zawsze sprawdzić, czy wydruk jest w skali 100%, aby zapewnić dokładność.
+                      Na Linijka-Online.pl chcemy, abyś zawsze miał niezawodną, praktyczną i darmową linijkę do druku na wyciągnięcie ręki.
                     </p>
                   </section>
                 </div>
@@ -147,7 +148,7 @@ const ImprimirRegla: React.FC = () => {
           <div className="hidden print:block print:m-0 print:p-0">
             <img
               src={reglaImage}
-              alt="Imprimir Regla"
+              alt="Linijka do druku"
               className="w-auto h-auto max-w-none"
               style={{ width: 'auto', height: 'auto' }}
             />
@@ -201,4 +202,4 @@ const ImprimirRegla: React.FC = () => {
   );
 };
 
-export default ImprimirRegla;
+export default DrukujLinijke;

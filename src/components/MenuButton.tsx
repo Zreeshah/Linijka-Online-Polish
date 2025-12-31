@@ -35,32 +35,32 @@ const MenuButton: React.FC = () => {
               className="text-lg font-medium hover:text-ruler-primary py-2"
               onClick={() => setIsOpen(false)}
             >
-              Inicio
+              Strona Główna
             </Link>
             <Link
-              to="/imprimir"
+              to="/drukuj"
               className="text-lg font-medium hover:text-ruler-primary py-2"
               onClick={() => setIsOpen(false)}
             >
-              Imprimir Regla
+              Drukuj Linijkę
             </Link>
             
             <div className="pt-4 pb-2">
-              <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Información</p>
+              <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Informacje</p>
             </div>
             <Link 
-              to="/sobre-nosotros" 
+              to="/o-nas" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Sobre Nosotros
+              O Nas
             </Link>
             <Link 
-              to="/contacto" 
+              to="/kontakt" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Contacto
+              Kontakt
             </Link>
             <Link 
               to="/privacy" 
@@ -80,89 +80,68 @@ const MenuButton: React.FC = () => {
             <div className="pt-4 pb-2">
               <p className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">Blog</p>
             </div>
-            <Link
-              to="/blog/buscar-dni-por-nombre" 
+            <Link 
+              to="/blog/system-metryczny" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Buscar DNI por Nombre
+              System Metryczny Dziesiętny
             </Link>
             <Link 
-              to="/blog/saber-dni-persona" 
+              to="/blog/system-mks" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Cómo Saber el DNI de una Persona
+              System MKS
             </Link>
             <Link 
-              to="/blog/perdido-dni" 
+              to="/blog/system-naturalny-jednostek" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              He Perdido el DNI
+              Naturalny System Jednostek
             </Link>
             <Link 
-              to="/blog/sistema-metrico-decimal" 
+              to="/blog/system-anglosaski-jednostek" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Sistema Métrico Decimal
+              System Anglosaski Jednostek
             </Link>
             <Link 
-              to="/blog/sistema-mks" 
+              to="/blog/klinometr" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Sistema MKS
+              Klinometr: Co To i Jak Używać
             </Link>
             <Link 
-              to="/blog/sistema-natural-unidades" 
+              to="/blog/miernik-glebokosci" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Sistema Natural de Unidades
+              Miernik Głębokości: Co To i Jak Używać
             </Link>
             <Link 
-              to="/blog/sistema-anglosajon-unidades" 
+              to="/blog/liczby-bezwymiarowe" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Sistema Anglosajón de Unidades
+              Liczby Bezwymiarowe
             </Link>
             <Link 
-              to="/blog/clinometro" 
+              to="/blog/jak-uzywac-linijki" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Clinómetro: Qué es y Cómo Usarlo
+              Jak Używać Linijki
             </Link>
             <Link 
-              to="/blog/medidor-profundidad" 
+              to="/blog/1-cm-ile-mm" 
               className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
               onClick={() => setIsOpen(false)}
             >
-              Medidor de Profundidad: Qué es y Cómo Usarlo
-            </Link>
-            <Link 
-              to="/blog/numeros-adimensionales" 
-              className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Números Adimensionales
-            </Link>
-            <Link 
-              to="/blog/como-saber-cuanto-paro" 
-              className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Cómo Saber Cuánto Paro Tengo
-            </Link>
-            <Link 
-              to="/blog/como-usar-regla" 
-              className="text-base font-medium hover:text-ruler-primary py-2 pl-2"
-              onClick={() => setIsOpen(false)}
-            >
-              Cómo Usar una Regla
+              1 cm ile mm
             </Link>
           </nav>
         </div>

@@ -30,27 +30,27 @@ const Index = () => {
   
   const featuredArticles = blogArticles.filter(article => article.url !== "/").slice(0, 3);
   
-  const metaDescription = "Regla online con calibración precisa para medir en cm, mm y pulgadas en tu pantalla. Perfecta para mediciones exactas.";
+  const metaDescription = "Linijka online z precyzyjną kalibracją do mierzenia w cm, mm i calach na ekranie. Centymetr online, miarka online i miarka cm w telefonie. Idealna do dokładnych pomiarów.";
   
   const webApplicationSchema = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Regla Online",
+    "name": "Linijka Online",
     "description": metaDescription,
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Any",
-    "url": "https://regla.onl",
+    "url": "https://linijka-online.pl",
     "offers": {
       "@type": "Offer",
       "price": "0",
-      "priceCurrency": "USD"
+      "priceCurrency": "PLN"
     },
     "featureList": [
-      "Medición en centímetros y pulgadas",
-      "Tamaño real ajustable",
-      "Compatible con todos los dispositivos",
-      "Sin descargas necesarias",
-      "Calibración precisa"
+      "Pomiary w centymetrach i calach",
+      "Regulowany rzeczywisty rozmiar",
+      "Kompatybilna ze wszystkimi urządzeniami",
+      "Bez pobierania",
+      "Precyzyjna kalibracja"
     ]
   };
   
@@ -67,10 +67,10 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Regla Online a Tamaño Real</title>
+        <title>Linijka Online w Rzeczywistym Rozmiarze | Centymetr Online | Miarka Online</title>
         <meta name="description" content={metaDescription} />
-        <meta name="keywords" content="regla online, regla virtual, regla tamaño real, regla online cm, cinta metrica online" />
-        <html lang="es" />
+        <meta name="keywords" content="linijka, centymetr online, miarka online, miarka, miarka cm, miarka cm w telefonie, 1 cm ile mm" />
+        <html lang="pl" />
         
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -125,10 +125,10 @@ const Index = () => {
         {!isMobile && (
           <div className="container text-center mt-8 mb-12">
             <h1 className="text-3xl md:text-4xl font-bold text-[#9b87f5] animate-fade-in">
-              <strong>Regla Online a Tamaño Real</strong>
+              <strong>Linijka Online w Rzeczywistym Rozmiarze</strong>
             </h1>
             <p className="text-lg text-gray-600 mt-2 animate-slide-in">
-              Regla digital y cinta métrica online con calibración precisa para medir objetos reales en tu pantalla
+              Cyfrowa linijka i miarka online z precyzyjną kalibracją do mierzenia rzeczywistych przedmiotów na ekranie
             </p>
           </div>
         )}
@@ -148,10 +148,10 @@ const Index = () => {
               {isMobile && (
                 <div className="mb-6 text-center">
                   <h1 className="text-2xl font-bold text-[#9b87f5] mb-2">
-                    Regla Online a Tamaño Real
+                    Linijka Online w Rzeczywistym Rozmiarze
                   </h1>
                   <p className="text-sm text-gray-600">
-                    Regla digital con calibración precisa para medir objetos reales
+                    Cyfrowa linijka z precyzyjną kalibracją do mierzenia rzeczywistych przedmiotów
                   </p>
                 </div>
               )}
@@ -161,7 +161,7 @@ const Index = () => {
                   <CardContent className="p-0">
                     <h2 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-[#9b87f5] flex items-center">
                       <Book size={20} className="mr-2" />
-                      Artículos Destacados
+                      Polecane Artykuły
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {featuredArticles.map((article, index) => (
@@ -177,7 +177,7 @@ const Index = () => {
                             {article.keywords.slice(0, 3).join(', ')}
                           </p>
                           <div className="flex items-center text-[#9b87f5] text-sm font-medium">
-                            Leer más
+                            Czytaj więcej
                             <ArrowRight size={14} className="ml-1 group-hover:translate-x-1 transition-transform" />
                           </div>
                         </Link>
@@ -192,7 +192,7 @@ const Index = () => {
                   <CardContent className="p-0">
                     <img 
                       src={calibrationGuide} 
-                      alt="Guía de calibración: Se ajusta al ancho de una tarjeta de plástico" 
+                      alt="Przewodnik kalibracji: Dopasuj do szerokości karty plastikowej" 
                       className="w-full h-auto rounded-lg object-cover"
                       loading="eager"
                       fetchPriority="high"
@@ -273,56 +273,56 @@ const Index = () => {
               <div className="mb-10">
                 <Card className="bg-white p-6">
                   <CardContent className="p-0">
-                    <h2 className="text-2xl font-bold mb-4 text-[#9b87f5]">¿Cómo utilizar la regla online correctamente?</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-[#9b87f5]">Jak prawidłowo używać linijki online?</h2>
                     <p className="mb-6 text-gray-700">
-                      Aprende paso a paso a calibrar y usar la regla virtual en tu dispositivo para obtener medidas lo más precisas posibles.
+                      Naucz się krok po kroku kalibrować i używać wirtualnej linijki na swoim urządzeniu, aby uzyskać jak najdokładniejsze pomiary.
                     </p>
 
                     <div className="space-y-6">
                       <div>
-                        <h3 className="text-xl font-semibold mb-3 text-gray-800">1. Elige la unidad de medida</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-800">1. Wybierz jednostkę miary</h3>
                         <p className="text-gray-700">
-                          Selecciona la unidad que necesites: milímetros (mm), centímetros (cm) o pulgadas (in). Puedes cambiarla en cualquier momento desde el menú de la regla.
+                          Wybierz potrzebną jednostkę: milimetry (mm), centymetry (cm) lub cale (in). Możesz ją zmienić w dowolnym momencie z menu linijki.
                         </p>
                       </div>
 
                       <div>
-                        <h3 className="text-xl font-semibold mb-3 text-gray-800">2. Calibra la pantalla (método recomendado)</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-800">2. Skalibruj ekran (zalecana metoda)</h3>
                         <p className="text-gray-700 mb-3">
-                          Para que la regla muestre medidas reales, realiza una calibración rápida:
+                          Aby linijka pokazywała rzeczywiste wymiary, wykonaj szybką kalibrację:
                         </p>
                         
                         <div className="bg-gray-50 p-4 rounded-lg mb-4">
-                          <h4 className="font-semibold mb-2 text-gray-800">Opción A — Calibración por tarjeta estándar (recomendada):</h4>
+                          <h4 className="font-semibold mb-2 text-gray-800">Opcja A — Kalibracja standardową kartą (zalecana):</h4>
                           <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Coloca una tarjeta de crédito o débito sobre la pantalla.</li>
-                            <li>Ajusta el control de calibración hasta que la longitud de la tarjeta en pantalla coincida con 85.6 mm (tamaño estándar).</li>
-                            <li>Guarda la calibración.</li>
+                            <li>Umieść kartę kredytową lub debetową na ekranie.</li>
+                            <li>Dostosuj kontrolę kalibracji, aż długość karty na ekranie będzie odpowiadać 85,6 mm (standardowy rozmiar).</li>
+                            <li>Zapisz kalibrację.</li>
                           </ul>
                         </div>
 
                         <div className="bg-gray-50 p-4 rounded-lg">
-                          <h4 className="font-semibold mb-2 text-gray-800">Opción B — Calibración por diagonal de pantalla:</h4>
+                          <h4 className="font-semibold mb-2 text-gray-800">Opcja B — Kalibracja przekątną ekranu:</h4>
                           <ul className="list-disc list-inside space-y-2 text-gray-700">
-                            <li>Si conoces la diagonal de tu pantalla en pulgadas, introdúcela en el campo de calibración.</li>
-                            <li>La web calculará la relación píxeles→mm automáticamente.</li>
+                            <li>Jeśli znasz przekątną ekranu w calach, wpisz ją w polu kalibracji.</li>
+                            <li>Strona automatycznie obliczy stosunek piksele→mm.</li>
                           </ul>
                         </div>
                       </div>
 
                       <div>
-                        <h3 className="text-xl font-semibold mb-3 text-gray-800">3. Prepara el dispositivo y el objeto a medir</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-800">3. Przygotuj urządzenie i przedmiot do pomiaru</h3>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
-                          <li>Coloca el dispositivo (teléfono/tablet/PC) sobre una superficie plana y estable.</li>
-                          <li>Asegúrate de que la pantalla está limpia y sin reflejos que dificulten la lectura.</li>
-                          <li>Coloca el objeto a medir lo más paralelo posible a la regla en pantalla.</li>
+                          <li>Umieść urządzenie (telefon/tablet/komputer) na płaskiej i stabilnej powierzchni.</li>
+                          <li>Upewnij się, że ekran jest czysty i bez odbić utrudniających odczyt.</li>
+                          <li>Umieść mierzony przedmiot jak najbardziej równolegle do linijki na ekranie.</li>
                         </ul>
                       </div>
 
                       <div className="my-6">
                         <img
                           src={reglaOnline}
-                          alt="Instrumento de precisión calibrador digital sobre superficie oscura para mediciones exactas"
+                          alt="Precyzyjny cyfrowy instrument kalibracyjny na ciemnej powierzchni do dokładnych pomiarów"
                           className="w-full max-w-md mx-auto h-auto rounded-lg shadow-md object-cover"
                           loading="lazy"
                           decoding="async"
@@ -332,35 +332,35 @@ const Index = () => {
                       </div>
 
                       <div>
-                        <h3 className="text-xl font-semibold mb-3 text-gray-800">4. Mide correctamente</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-800">4. Mierz prawidłowo</h3>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
-                          <li>Sitúa el borde del objeto en el punto 0 de la regla virtual.</li>
-                          <li>Lee la medida en la unidad seleccionada.</li>
-                          <li>Si el objeto es más largo que la regla en pantalla, anota la medida visible y desplaza el objeto para medir el resto (o usa la función de desplazamiento/zoom si está disponible).</li>
+                          <li>Ustaw krawędź przedmiotu w punkcie 0 wirtualnej linijki.</li>
+                          <li>Odczytaj pomiar w wybranej jednostce.</li>
+                          <li>Jeśli przedmiot jest dłuższy niż linijka na ekranie, zanotuj widoczny pomiar i przesuń przedmiot, aby zmierzyć resztę (lub użyj funkcji przesuwania/powiększenia, jeśli jest dostępna).</li>
                         </ul>
                       </div>
 
                       <div>
-                        <h3 className="text-xl font-semibold mb-3 text-gray-800">5. Consejos para mayor precisión</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-800">5. Wskazówki dla większej precyzji</h3>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
-                          <li>Verifica que la escala del navegador esté al 100% (sin zoom).</li>
-                          <li>Evita medir a través de fundas muy gruesas o protectores que alteren la posición del objeto.</li>
-                          <li>Recalibra si cambias de dispositivo o después de una actualización del navegador.</li>
-                          <li>Para mediciones críticas (ingeniería, construcción) usa instrumentos físicos certificados.</li>
+                          <li>Sprawdź, czy skala przeglądarki jest ustawiona na 100% (bez powiększenia).</li>
+                          <li>Unikaj mierzenia przez grube etui lub ochraniacze, które mogą zmienić pozycję przedmiotu.</li>
+                          <li>Ponownie skalibruj po zmianie urządzenia lub aktualizacji przeglądarki.</li>
+                          <li>Do krytycznych pomiarów (inżynieria, budownictwo) używaj certyfikowanych instrumentów fizycznych.</li>
                         </ul>
                       </div>
 
                       <div>
-                        <h3 className="text-xl font-semibold mb-3 text-gray-800">6. Problemas comunes y soluciones rápidas</h3>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-800">6. Częste problemy i szybkie rozwiązania</h3>
                         <div className="space-y-3">
                           <div className="bg-gray-50 p-3 rounded">
-                            <p className="text-gray-700"><strong>Medidas incorrectas:</strong> Recalibra con la tarjeta estándar.</p>
+                            <p className="text-gray-700"><strong>Nieprawidłowe pomiary:</strong> Ponownie skalibruj za pomocą standardowej karty.</p>
                           </div>
                           <div className="bg-gray-50 p-3 rounded">
-                            <p className="text-gray-700"><strong>La regla se ve distorsionada:</strong> Asegúrate de que no haya zoom en la página ni en la configuración de accesibilidad.</p>
+                            <p className="text-gray-700"><strong>Linijka wygląda na zniekształconą:</strong> Upewnij się, że na stronie ani w ustawieniach dostępności nie ma powiększenia.</p>
                           </div>
                           <div className="bg-gray-50 p-3 rounded">
-                            <p className="text-gray-700"><strong>No funciona en mi navegador:</strong> Actualiza el navegador o prueba con Chrome/Firefox/Safari en su versión más reciente.</p>
+                            <p className="text-gray-700"><strong>Nie działa w mojej przeglądarce:</strong> Zaktualizuj przeglądarkę lub wypróbuj Chrome/Firefox/Safari w najnowszej wersji.</p>
                           </div>
                         </div>
                       </div>
@@ -372,15 +372,15 @@ const Index = () => {
               <div className="mb-10">
                 <Card className="bg-white p-6">
                   <CardContent className="p-0">
-                    <h2 className="text-2xl font-bold mb-4 text-[#9b87f5]">¡Empieza a medir ahora!</h2>
+                    <h2 className="text-2xl font-bold mb-4 text-[#9b87f5]">Zacznij mierzyć teraz!</h2>
                     <p className="text-lg text-gray-700 mb-4">
-                      Tu pantalla puede convertirse en una herramienta de medición precisa y gratuita. Con nuestra regla online, puedes medir objetos directamente desde tu móvil, tablet o computadora sin necesidad de descargar nada.
+                      Twój ekran może stać się precyzyjnym i darmowym narzędziem pomiarowym. Z naszą linijką online możesz mierzyć przedmioty bezpośrednio z telefonu, tabletu lub komputera bez konieczności pobierania czegokolwiek.
                     </p>
 
                     <div className="my-6">
                       <img
                         src={reglaPrecision}
-                        alt="Persona usando regla de medición profesional sobre papel con precisión milimétrica en trabajo de diseño"
+                        alt="Osoba używająca profesjonalnej linijki pomiarowej na papierze z milimetrową precyzją w pracy projektowej"
                         className="w-full max-w-md mx-auto h-auto rounded-lg shadow-md object-cover"
                         loading="lazy"
                         decoding="async"
@@ -391,25 +391,25 @@ const Index = () => {
 
                     <div className="space-y-6">
                       <div className="bg-gray-50 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">⚡ Rápido, fácil y gratis</h3>
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">⚡ Szybko, łatwo i za darmo</h3>
                         <p className="text-gray-700">
-                          Solo calibra una vez, y podrás usar la regla virtual siempre que la necesites. Funciona perfectamente con las unidades más comunes: centímetros, milímetros y pulgadas.
+                          Skalibruj tylko raz, a wirtualną linijkę będziesz mógł używać zawsze, gdy jej potrzebujesz. Działa doskonale z najpopularniejszymi jednostkami: centymetrami, milimetrami i calami.
                         </p>
                       </div>
 
                       <div className="bg-gray-50 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">✓ Listo para comenzar</h3>
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">✓ Gotowy do rozpoczęcia</h3>
                         <ul className="list-disc list-inside space-y-2 text-gray-700">
-                          <li>Pulsa el botón "Calibrar pantalla".</li>
-                          <li>Ajusta la regla según el tamaño de tu pantalla o con una tarjeta estándar.</li>
-                          <li>¡Empieza a medir de inmediato cualquier objeto que tengas a la mano!</li>
+                          <li>Naciśnij przycisk "Kalibruj ekran".</li>
+                          <li>Dostosuj linijkę do rozmiaru ekranu lub za pomocą standardowej karty.</li>
+                          <li>Zacznij od razu mierzyć każdy przedmiot, który masz pod ręką!</li>
                         </ul>
                       </div>
 
                       <div className="bg-gray-50 p-4 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-2 text-gray-800">🎯 ¿Por qué esperar?</h3>
+                        <h3 className="text-xl font-semibold mb-2 text-gray-800">🎯 Po co czekać?</h3>
                         <p className="text-gray-700">
-                          Mide, compara y calcula al instante desde cualquier dispositivo. Ideal para estudiantes, diseñadores, artesanos y todo aquel que necesite una medición rápida y fiable.
+                          Mierz, porównuj i obliczaj natychmiast z dowolnego urządzenia. Idealna dla studentów, projektantów, rzemieślników i każdego, kto potrzebuje szybkiego i niezawodnego pomiaru.
                         </p>
                       </div>
                     </div>
