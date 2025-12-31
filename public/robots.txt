@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://regla.onl/sitemap.xml
+Sitemap: https://linijka-online.pl/sitemap.xml

@@ -9,24 +9,24 @@ const Disclaimer = () => {
   const { t } = useLanguage();
   
   const content = {
-    title: "Descargo de responsabilidad de Regla",
-    intro: "Si necesita más información o tiene alguna pregunta sobre el descargo de responsabilidad de nuestro sitio web, no dude en contactarnos por correo electrónico a admin@regla.onl.",
-    mainTitle: "Descargo de responsabilidad de Regla",
-    mainText: "Toda la información de este sitio web (https://regla.onl) se publica de buena fe y únicamente con fines informativos generales. Regla no ofrece garantías sobre la integridad, fiabilidad y exactitud de esta información. Cualquier acción que usted realice basándose en la información que encuentre en este sitio web (Regla) es bajo su propia responsabilidad. Regla no se hace responsable de las pérdidas o daños relacionados con el uso de nuestro sitio web.",
-    externalLinks: "Desde nuestro sitio web, puede visitar otros sitios web a través de enlaces externos. Si bien nos esforzamos por proporcionar solo enlaces de calidad a sitios web útiles y éticos, no tenemos control sobre el contenido ni la naturaleza de estos sitios. Estos enlaces a otros sitios web no implican una recomendación de todo el contenido que se encuentra en ellos. Los propietarios y el contenido de los sitios pueden cambiar sin previo aviso, incluso antes de que tengamos la oportunidad de eliminar un enlace que ya no funcione. Tenga en cuenta que, al salir de nuestro sitio web, otros sitios pueden tener políticas de privacidad y términos diferentes que escapan a nuestro control. Asegúrese de consultar las políticas de privacidad y los términos de servicio de dichos sitios antes de realizar cualquier transacción o subir información.",
-    consentTitle: "Consentimiento",
-    consentText: "Al usar nuestro sitio web, usted acepta este descargo de responsabilidad y sus términos.",
-    updateTitle: "Actualización",
-    updateText: "En caso de que actualicemos, modifiquemos o realicemos algún cambio en este documento, dichos cambios se publicarán aquí de forma destacada."
+    title: "Zastrzeżenia prawne Linijka-Online.pl",
+    intro: "Jeśli potrzebujesz więcej informacji lub masz pytania dotyczące zastrzeżeń prawnych naszej strony, skontaktuj się z nami mailowo pod adresem admin@linijka-online.pl.",
+    mainTitle: "Zastrzeżenia prawne Linijka-Online.pl",
+    mainText: "Wszystkie informacje na tej stronie (https://linijka-online.pl) są publikowane w dobrej wierze i wyłącznie w celach informacyjnych. Linijka-Online.pl nie oferuje żadnych gwarancji dotyczących kompletności, niezawodności i dokładności tych informacji. Wszelkie działania podejmowane na podstawie informacji znalezionych na tej stronie (Linijka-Online.pl) są podejmowane na własne ryzyko. Linijka-Online.pl nie ponosi odpowiedzialności za straty lub szkody związane z korzystaniem z naszej strony.",
+    externalLinks: "Z naszej strony możesz odwiedzać inne strony za pośrednictwem zewnętrznych linków. Chociaż staramy się zapewniać tylko linki do przydatnych i etycznych stron, nie mamy kontroli nad treścią ani charakterem tych stron. Te linki do innych stron nie oznaczają rekomendacji całej zawartości znajdującej się na nich. Właściciele i treść stron mogą się zmienić bez uprzedzenia, nawet zanim zdążymy usunąć link, który przestał działać. Należy pamiętać, że po opuszczeniu naszej strony inne strony mogą mieć inne polityki prywatności i warunki, które są poza naszą kontrolą. Upewnij się, że zapoznałeś się z polityką prywatności i warunkami korzystania z takich stron przed dokonaniem jakiejkolwiek transakcji lub przesłaniem informacji.",
+    consentTitle: "Zgoda",
+    consentText: "Korzystając z naszej strony, akceptujesz niniejsze zastrzeżenia prawne i ich warunki.",
+    updateTitle: "Aktualizacja",
+    updateText: "W przypadku aktualizacji, modyfikacji lub wprowadzenia jakichkolwiek zmian w tym dokumencie, zmiany te zostaną opublikowane tutaj w widoczny sposób."
   };
   
   return (
     <>
       <Helmet>
-        <title>{content.title} - Regla.Onl</title>
+        <title>{content.title} - Linijka-Online.pl</title>
         <meta name="description" content={content.mainText.substring(0, 160)} />
-        <html lang="es" />
-        <link rel="canonical" href="https://regla.onl/disclaimer" />
+        <html lang="pl" />
+        <link rel="canonical" href="https://linijka-online.pl/disclaimer" />
       </Helmet>
       
       <div className="flex flex-col min-h-screen bg-gray-50">

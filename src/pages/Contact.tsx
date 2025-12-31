@@ -9,9 +9,9 @@ import { useToast } from '@/hooks/use-toast';
 import { z } from 'zod';
 
 const contactSchema = z.object({
-  name: z.string().trim().min(1, { message: "El nombre es requerido" }).max(100, { message: "El nombre debe tener menos de 100 caracteres" }),
-  email: z.string().trim().email({ message: "Email inválido" }).max(255, { message: "El email debe tener menos de 255 caracteres" }),
-  message: z.string().trim().min(1, { message: "El mensaje es requerido" }).max(1000, { message: "El mensaje debe tener menos de 1000 caracteres" })
+  name: z.string().trim().min(1, { message: "Imię jest wymagane" }).max(100, { message: "Imię musi mieć mniej niż 100 znaków" }),
+  email: z.string().trim().email({ message: "Nieprawidłowy email" }).max(255, { message: "Email musi mieć mniej niż 255 znaków" }),
+  message: z.string().trim().min(1, { message: "Wiadomość jest wymagana" }).max(1000, { message: "Wiadomość musi mieć mniej niż 1000 znaków" })
 });
 
 const Contact = () => {
@@ -32,14 +32,11 @@ const Contact = () => {
     try {
       const validatedData = contactSchema.parse(formData);
       
-      // Here you would normally send the data to your backend
-      // For now, we'll just show a success message
       toast({
-        title: "¡Mensaje enviado!",
-        description: "Gracias por contactarnos. Te responderemos pronto.",
+        title: "Wiadomość wysłana!",
+        description: "Dziękujemy za kontakt. Odpowiemy wkrótce.",
       });
       
-      // Reset form
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       if (error instanceof z.ZodError) {
@@ -59,7 +56,6 @@ const Contact = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    // Clear error for this field when user starts typing
     if (errors[name]) {
       setErrors(prev => ({ ...prev, [name]: '' }));
     }
@@ -68,10 +64,10 @@ const Contact = () => {
   return (
     <>
       <Helmet>
-        <title>Contacto - Regla.Onl</title>
-        <meta name="description" content="Contáctanos para cualquier pregunta o sugerencia sobre nuestra herramienta de regla online." />
-        <html lang="es" />
-        <link rel="canonical" href="https://regla.onl/contacto" />
+        <title>Kontakt - Linijka-Online.pl</title>
+        <meta name="description" content="Skontaktuj się z nami w sprawie pytań lub sugestii dotyczących naszej linijki online." />
+        <html lang="pl" />
+        <link rel="canonical" href="https://linijka-online.pl/kontakt" />
       </Helmet>
       
       <div className="flex flex-col min-h-screen bg-gray-50">
@@ -80,17 +76,17 @@ const Contact = () => {
         <main className="container flex-1 py-8">
           <div className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
             <h1 className="text-2xl font-bold mb-6 text-ruler-primary">
-              Contacto
+              Kontakt
             </h1>
             
             <p className="mb-6 text-gray-700">
-              ¿Tienes alguna pregunta o sugerencia? Nos encantaría escucharte. Completa el formulario a continuación y nos pondremos en contacto contigo lo antes posible.
+              Masz pytanie lub sugestię? Chętnie Cię wysłuchamy. Wypełnij poniższy formularz, a skontaktujemy się z Tobą jak najszybciej.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2 text-gray-700">
-                  Nombre *
+                  Imię *
                 </label>
                 <Input
                   id="name"
@@ -99,7 +95,7 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   className={errors.name ? "border-red-500" : ""}
-                  placeholder="Tu nombre"
+                  placeholder="Twoje imię"
                   maxLength={100}
                 />
                 {errors.name && (
@@ -118,7 +114,7 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   className={errors.email ? "border-red-500" : ""}
-                  placeholder="tu@email.com"
+                  placeholder="twoj@email.pl"
                   maxLength={255}
                 />
                 {errors.email && (
@@ -128,7 +124,7 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2 text-gray-700">
-                  Mensaje *
+                  Wiadomość *
                 </label>
                 <Textarea
                   id="message"
@@ -136,7 +132,7 @@ const Contact = () => {
                   value={formData.message}
                   onChange={handleChange}
                   className={errors.message ? "border-red-500" : ""}
-                  placeholder="Escribe tu mensaje aquí..."
+                  placeholder="Napisz swoją wiadomość tutaj..."
                   rows={6}
                   maxLength={1000}
                 />
@@ -150,16 +146,16 @@ const Contact = () => {
                 className="w-full"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Enviando..." : "Enviar Mensaje"}
+                {isSubmitting ? "Wysyłanie..." : "Wyślij Wiadomość"}
               </Button>
             </form>
 
             <div className="mt-8 pt-6 border-t">
               <h2 className="text-lg font-semibold mb-3 text-ruler-primary">
-                Otras formas de contacto
+                Inne formy kontaktu
               </h2>
               <p className="text-gray-700">
-                Email: <a href="mailto:info@regla.onl" className="text-ruler-primary hover:underline">info@regla.onl</a>
+                Email: <a href="mailto:info@linijka-online.pl" className="text-ruler-primary hover:underline">info@linijka-online.pl</a>
               </p>
             </div>
           </div>

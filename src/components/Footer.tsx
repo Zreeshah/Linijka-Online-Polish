@@ -12,15 +12,15 @@ const Footer: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <p className="text-sm text-gray-500">
-              © 2025 Regla Online. Todos los derechos reservados.
+              © 2025 Linijka Online. Wszelkie prawa zastrzeżone.
             </p>
           </div>
           <div className="flex flex-wrap gap-4 justify-center md:justify-end">
-            <Link to="/sobre-nosotros" className="text-sm text-ruler-primary hover:underline">
-              Sobre Nosotros
+            <Link to="/o-nas" className="text-sm text-ruler-primary hover:underline">
+              O Nas
             </Link>
-            <Link to="/contacto" className="text-sm text-ruler-primary hover:underline">
-              Contacto
+            <Link to="/kontakt" className="text-sm text-ruler-primary hover:underline">
+              Kontakt
             </Link>
             <Link to="/privacy" className="text-sm text-ruler-primary hover:underline">
               {t('privacy')}

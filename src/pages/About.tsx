@@ -8,10 +8,10 @@ const About = () => {
   return (
     <>
       <Helmet>
-        <title>Sobre Nosotros - Regla.Onl</title>
-        <meta name="description" content="Conoce más sobre Regla.Onl, la herramienta de medición online más precisa y fácil de usar." />
-        <html lang="es" />
-        <link rel="canonical" href="https://regla.onl/sobre-nosotros" />
+        <title>O Nas - Linijka-Online.pl</title>
+        <meta name="description" content="Dowiedz się więcej o Linijka-Online.pl, najbardziej precyzyjnym i łatwym w użyciu narzędziu do pomiarów online." />
+        <html lang="pl" />
+        <link rel="canonical" href="https://linijka-online.pl/o-nas" />
       </Helmet>
       
       <div className="flex flex-col min-h-screen bg-gray-50">
@@ -21,15 +21,15 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <h1 className="text-3xl font-bold mb-6 text-ruler-primary">
-                Sobre Nosotros
+                O Nas
               </h1>
               
               <p className="text-lg text-gray-700 mb-6">
-                Bienvenido a Regla.Onl, tu herramienta de medición digital confiable y precisa. Creada con el objetivo de proporcionar una solución práctica para cuando necesitas medir objetos y no tienes una regla física a mano.
+                Witamy na Linijka-Online.pl, Twoim niezawodnym i precyzyjnym cyfrowym narzędziu pomiarowym. Stworzone z myślą o zapewnieniu praktycznego rozwiązania, gdy potrzebujesz zmierzyć przedmioty, a nie masz fizycznej linijki pod ręką.
               </p>
 
               <p className="text-gray-700 mb-6">
-                En un mundo cada vez más digital, entendemos que a veces las herramientas tradicionales no están disponibles cuando las necesitas. Por eso desarrollamos esta aplicación web que convierte tu pantalla en una regla calibrada, permitiéndote realizar mediciones precisas en cualquier momento y lugar.
+                W świecie coraz bardziej cyfrowym rozumiemy, że czasem tradycyjne narzędzia nie są dostępne, gdy ich potrzebujesz. Dlatego opracowaliśmy tę aplikację internetową, która zamienia Twój ekran w skalibrowaną linijkę, pozwalając na precyzyjne pomiary w dowolnym czasie i miejscu.
               </p>
             </div>
 
@@ -38,11 +38,11 @@ const About = () => {
                 <div className="flex items-center mb-4">
                   <Target className="text-ruler-primary mr-3" size={32} />
                   <h2 className="text-xl font-semibold text-ruler-primary">
-                    Nuestra Misión
+                    Nasza Misja
                   </h2>
                 </div>
                 <p className="text-gray-700">
-                  Proporcionar una herramienta de medición online accesible, precisa y fácil de usar para todos, sin importar dónde se encuentren o qué dispositivo utilicen.
+                  Zapewnienie dostępnego, precyzyjnego i łatwego w użyciu narzędzia do pomiarów online dla wszystkich, niezależnie od miejsca i używanego urządzenia.
                 </p>
               </div>
 
@@ -50,18 +50,18 @@ const About = () => {
                 <div className="flex items-center mb-4">
                   <Zap className="text-ruler-primary mr-3" size={32} />
                   <h2 className="text-xl font-semibold text-ruler-primary">
-                    Nuestra Visión
+                    Nasza Wizja
                   </h2>
                 </div>
                 <p className="text-gray-700">
-                  Ser la herramienta de medición digital más confiable y utilizada en el mundo hispanohablante, ayudando a millones de personas en sus necesidades diarias.
+                  Być najbardziej niezawodnym i najczęściej używanym cyfrowym narzędziem pomiarowym w Polsce, pomagając milionom ludzi w ich codziennych potrzebach.
                 </p>
               </div>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-md mb-8">
               <h2 className="text-2xl font-semibold mb-6 text-ruler-primary">
-                ¿Por qué elegir Regla.Onl?
+                Dlaczego wybrać Linijka-Online.pl?
               </h2>
               
               <div className="space-y-4">
@@ -70,8 +70,8 @@ const About = () => {
                     <span className="text-ruler-primary font-bold">1</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1 text-gray-900">Precisión Garantizada</h3>
-                    <p className="text-gray-700">Sistema de calibración avanzado que se adapta a tu pantalla específica para mediciones exactas.</p>
+                    <h3 className="font-semibold mb-1 text-gray-900">Gwarantowana Precyzja</h3>
+                    <p className="text-gray-700">Zaawansowany system kalibracji, który dostosowuje się do Twojego konkretnego ekranu dla dokładnych pomiarów.</p>
                   </div>
                 </div>
 
@@ -80,8 +80,8 @@ const About = () => {
                     <span className="text-ruler-primary font-bold">2</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1 text-gray-900">100% Gratis</h3>
-                    <p className="text-gray-700">Sin registros, sin suscripciones, sin costos ocultos. Siempre será gratuita.</p>
+                    <h3 className="font-semibold mb-1 text-gray-900">100% Za Darmo</h3>
+                    <p className="text-gray-700">Bez rejestracji, bez subskrypcji, bez ukrytych kosztów. Zawsze będzie darmowa.</p>
                   </div>
                 </div>
 
@@ -90,8 +90,8 @@ const About = () => {
                     <span className="text-ruler-primary font-bold">3</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1 text-gray-900">Fácil de Usar</h3>
-                    <p className="text-gray-700">Interfaz intuitiva diseñada para que cualquier persona pueda usarla sin complicaciones.</p>
+                    <h3 className="font-semibold mb-1 text-gray-900">Łatwa w Użyciu</h3>
+                    <p className="text-gray-700">Intuicyjny interfejs zaprojektowany tak, aby każdy mógł go używać bez komplikacji.</p>
                   </div>
                 </div>
 
@@ -100,8 +100,8 @@ const About = () => {
                     <span className="text-ruler-primary font-bold">4</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1 text-gray-900">Compatible con Todos los Dispositivos</h3>
-                    <p className="text-gray-700">Funciona perfectamente en computadoras, tablets y smartphones.</p>
+                    <h3 className="font-semibold mb-1 text-gray-900">Kompatybilna ze Wszystkimi Urządzeniami</h3>
+                    <p className="text-gray-700">Działa doskonale na komputerach, tabletach i smartfonach.</p>
                   </div>
                 </div>
 
@@ -110,8 +110,8 @@ const About = () => {
                     <span className="text-ruler-primary font-bold">5</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-1 text-gray-900">Privacidad Primero</h3>
-                    <p className="text-gray-700">Todas las calibraciones se guardan localmente en tu navegador. No recopilamos ni compartimos tus datos.</p>
+                    <h3 className="font-semibold mb-1 text-gray-900">Prywatność Przede Wszystkim</h3>
+                    <p className="text-gray-700">Wszystkie kalibracje są zapisywane lokalnie w przeglądarce. Nie zbieramy ani nie udostępniamy Twoich danych.</p>
                   </div>
                 </div>
               </div>
@@ -119,13 +119,13 @@ const About = () => {
 
             <div className="bg-white p-8 rounded-lg shadow-md">
               <h2 className="text-2xl font-semibold mb-4 text-ruler-primary">
-                Nuestro Compromiso
+                Nasze Zobowiązanie
               </h2>
               <p className="text-gray-700 mb-4">
-                Nos comprometemos a mantener Regla.Onl como una herramienta gratuita, accesible y en constante mejora. Escuchamos a nuestra comunidad y trabajamos continuamente para añadir nuevas características y mejorar la experiencia de usuario.
+                Zobowiązujemy się utrzymywać Linijka-Online.pl jako darmowe, dostępne i stale ulepszane narzędzie. Słuchamy naszej społeczności i ciągle pracujemy nad dodawaniem nowych funkcji i ulepszaniem doświadczenia użytkownika.
               </p>
               <p className="text-gray-700">
-                Si tienes alguna sugerencia o comentario, no dudes en contactarnos. Tu opinión es fundamental para nosotros.
+                Jeśli masz jakieś sugestie lub uwagi, nie wahaj się z nami skontaktować. Twoja opinia jest dla nas fundamentalna.
               </p>
             </div>
           </div>
