@@ -16,6 +16,10 @@ const Contact = lazy(() => import("./pages/Contact"));
 const About = lazy(() => import("./pages/About"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 const DrukujLinijke = lazy(() => import("./pages/DrukujLinijke"));
+const JakUzywacLinijkiBlogPost = lazy(() => import("./pages/JakUzywacLinijkiBlogPost"));
+const SystemMetrycznyBlogPost = lazy(() => import("./pages/SystemMetrycznyBlogPost"));
+const SystemMKSBlogPost = lazy(() => import("./pages/SystemMKSBlogPost"));
+const KlinometrBlogPost = lazy(() => import("./pages/KlinometrBlogPost"));
 
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-screen">
@@ -43,6 +47,10 @@ const App: React.FC = () => {
                     <Route path="/kontakt" element={<Contact />} />
                     <Route path="/o-nas" element={<About />} />
                     <Route path="/drukuj" element={<DrukujLinijke />} />
+                    <Route path="/blog/jak-uzywac-linijki" element={<JakUzywacLinijkiBlogPost />} />
+                    <Route path="/blog/system-metryczny" element={<SystemMetrycznyBlogPost />} />
+                    <Route path="/blog/system-mks" element={<SystemMKSBlogPost />} />
+                    <Route path="/blog/klinometr" element={<KlinometrBlogPost />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </Suspense>
