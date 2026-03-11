@@ -71,7 +71,8 @@ const Index = () => {
         <meta name="description" content={metaDescription} />
         <meta name="keywords" content="linijka, centymetr online, miarka online, miarka, miarka cm, miarka cm w telefonie, 1 cm ile mm" />
         <html lang="pl" />
-        
+        <link rel="canonical" href="https://linijka-online.pl/" />
+        <meta property="og:url" content="https://linijka-online.pl/" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
