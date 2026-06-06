@@ -20,6 +20,11 @@ const JakUzywacLinijkiBlogPost = lazy(() => import("./pages/JakUzywacLinijkiBlog
 const SystemMetrycznyBlogPost = lazy(() => import("./pages/SystemMetrycznyBlogPost"));
 const SystemMKSBlogPost = lazy(() => import("./pages/SystemMKSBlogPost"));
 const KlinometrBlogPost = lazy(() => import("./pages/KlinometrBlogPost"));
+const CmIleMmBlogPost = lazy(() => import("./pages/CmIleMmBlogPost"));
+const SystemNaturalnyBlogPost = lazy(() => import("./pages/SystemNaturalnyBlogPost"));
+const SystemAnglosaskiBlogPost = lazy(() => import("./pages/SystemAnglosaskiBlogPost"));
+const MiernikGlebokosciBlogPost = lazy(() => import("./pages/MiernikGlebokosciBlogPost"));
+const LiczbyBezwymiaroweBlogPost = lazy(() => import("./pages/LiczbyBezwymiaroweBlogPost"));
 
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-screen">
@@ -51,6 +56,11 @@ const App: React.FC = () => {
                     <Route path="/blog/system-metryczny" element={<SystemMetrycznyBlogPost />} />
                     <Route path="/blog/system-mks" element={<SystemMKSBlogPost />} />
                     <Route path="/blog/klinometr" element={<KlinometrBlogPost />} />
+                    <Route path="/blog/1-cm-ile-mm" element={<CmIleMmBlogPost />} />
+                    <Route path="/blog/system-naturalny-jednostek" element={<SystemNaturalnyBlogPost />} />
+                    <Route path="/blog/system-anglosaski-jednostek" element={<SystemAnglosaskiBlogPost />} />
+                    <Route path="/blog/miernik-glebokosci" element={<MiernikGlebokosciBlogPost />} />
+                    <Route path="/blog/liczby-bezwymiarowe" element={<LiczbyBezwymiaroweBlogPost />} />
                     <Route path="*" element={<NotFound />} />
                   </Routes>
                 </Suspense>
